@@ -7,4 +7,4 @@ while True:
     y = (random.randint(200, 600))
 
     pag.moveTo(x, y, 0.5)
-    time.sleep(2)
+    time.sleep(5)
