@@ -1,5 +1,5 @@
 # Questo software aggiorna la repository di GitHub automaticamente muovendo il mouse al posto tuo.
-# By iThinkAle
+# By iThinkAle.
 
 import pyautogui as pag
 
