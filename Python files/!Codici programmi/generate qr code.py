@@ -1,5 +1,3 @@
-# Generatore di QR Codes
-
 import time
 import pyqrcode
 import sys
@@ -7,11 +5,12 @@ import sys
 
 def generateqrcode():
     string = input("Inserisci l'URL o la frase che vuoi inserire nel qr code: ")
-    path = input("Digita la path in cui salvare il file (Es: C:\Users\user\Documents\): ")
+    path = input("Digita la path in cui salvare il file (Es: C:/Users/[user]/Documents/)\n"
+                 "Ricordati di utilizzare il backslash (Per questioni di codice non lo ho potuto utilizzare): ")
     name = input("Digita il nome del file (escludi .png): ")
 
     url = pyqrcode.create(string)
-    url.png(path+name+".png", scale=6)\
+    url.png(path+name+".png", scale=6)
 
     aqrcode = input("Vuoi generare un altro qr code? S/N: ")
 
@@ -22,15 +21,18 @@ def generateqrcode():
         input()
         generateqrcode()
 
-    if aqrcode == "N" or aqrcode == "n":
+    elif aqrcode == "N" or aqrcode == "n":
         print("Il programma verrà chiuso fra qualche secondo")
         time.sleep(3)
+        sys.exit()
+    else:
+        print("Errore (digita una delle opzioni)")
         sys.exit()
 
 
 def inizio():
     print("Benvenuto nel generatore di QR Codes!")
-    print(input("Premi invio per continuare..."))
+    print(input("Premi INVIO per continuare..."))
     generateqrcode()
 
 

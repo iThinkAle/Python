@@ -54,7 +54,6 @@ def treliste():
     unique = list(set(array1 + array2 + array3))
     print(unique)
 
-
 def quattroliste():
     inputarray1 = input("Prima lista: ")
     inputarray2 = input("Seconda lista: ")
@@ -68,7 +67,6 @@ def quattroliste():
 
     unique = list(set(array1 + array2 + array3 + array4))
     print(unique)
-
 
 def cinqueliste():
     inputarray1 = input("Prima lista: ")
@@ -85,6 +83,5 @@ def cinqueliste():
 
     unique = list(set(array1 + array2 + array3 + array4 + array5))
     print(unique)
-
 
 inizio()

@@ -37,6 +37,8 @@ def generate_password():
         print("Grazie per aver usato il generatore. Ciao!")
         input()
         sys.exit()
-
+    else:
+        print("Errore (digita una delle opzioni)")
+        sys.exit()
 
 generate_password()
