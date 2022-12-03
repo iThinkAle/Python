@@ -13,5 +13,3 @@ pag.moveTo(1201, 792, 0.2)
 pag.sleep(4)
 pag.click()
 pag.alert("Repository aggiornata")
-
-
