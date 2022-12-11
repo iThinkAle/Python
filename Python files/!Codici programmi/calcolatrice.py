@@ -1,6 +1,58 @@
 import math
 import sys
 
+# OPERAZIONI
+
+
+def addizione():
+    print("Addizione")
+    a = float(input("Inserisci il primo numero:  "))
+    b = float(input("Inserisci secondo numero: "))
+    print("Il risultato dell'operazione é: " + str(a + b))
+
+
+def sottrazione():
+    print("Sottrazione")
+    a = float(input("Inserisci il primo numero:  "))
+    b = float(input("Inserisci secondo numero: "))
+    print("Il risultato dell'operazione é: " + str(a - b))
+
+
+def moltiplicazione():
+    print("Moltiplicazione")
+    a = float(input("Inserisci il primo numero:  "))
+    b = float(input("Inserisci secondo numero: "))
+    print("Il risultato dell'operazione é: " + str(a * b))
+
+
+def divisione():
+    print("Divisione")
+    a = float(input("Inserisci il primo numero:  "))
+    b = float(input("Inserisci secondo numero: "))
+    print("Il risultato dell'operazione é: " + str(a / b))
+
+
+def potenza():
+    print("Potenza")
+    a = float(input("Inserisci il numero da elevare:  "))
+    b = float(input("Inserisci l'esponente: "))
+    print("Il numero " + str(a) + " elevato a " + str(b) + " é: " + str(math.pow(a, b)))
+
+
+def radicequadrata():
+    print("Radice quadrata")
+    rq = float(input("Inserisci numero: "))
+    print("La radice quadrata di " + str(rq) + " è: " + str(math.sqrt(rq)))
+
+
+def fattoriale():
+    print("Fattoriale")
+    ft = int(input("Inserisci numero: "))
+    print("Il fattoriale di " + str(ft) + " è: " + str(math.factorial(ft)))
+
+
+############################################################################################################
+# SCELTA OPERAZIONI
 
 def main():
 
@@ -11,54 +63,38 @@ def main():
           "Divisione: digita 4; \n"
           "Potenza: digita 5; \n"
           "Radice quadrata: digita 6; \n"
-          "Fattoriale: digita 7; \n"
+          "Fattoriale (solo numeri interi): digita 7; \n"
           "Per chiudere la calcolatrice: digita ESC \n")
 
     x = input("Scegli l'operazione: ")
 
     if x == "1":
-        print("Addizione")
-        a = float(input("Inserisci il primo numero:  "))
-        b = float(input("Inserisci secondo numero: "))
-        print("Il risultato dell'operazione é: " + str(a + b))
+        addizione()
 
     elif x == "2":
-        print("Sottrazione")
-        a = float(input("Inserisci il primo numero:  "))
-        b = float(input("Inserisci secondo numero: "))
-        print("Il risultato dell'operazione é: " + str(a - b))
+        sottrazione()
 
     elif x == "3":
-        print("Moltiplicazione")
-        a = float(input("Inserisci il primo numero:  "))
-        b = float(input("Inserisci secondo numero: "))
-        print("Il risultato dell'operazione é: " + str(a * b))
+        moltiplicazione()
 
     elif x == "4":
-        print("Divisione")
-        a = float(input("Inserisci il primo numero:  "))
-        b = float(input("Inserisci secondo numero: "))
-        print("Il risultato dell'operazione é: " + str(a / b))
+        divisione()
 
     elif x == "5":
-        print("Potenza")
-        a = float(input("Inserisci il numero da elevare:  "))
-        b = float(input("Inserisci l'esponente: "))
-        print("Il numero "+str(a)+" elevato a "+str(b)+" é: "+str(math.pow(a, b)))
+        potenza()
 
     elif x == "6":
-        print("Radice quadrata")
-        rq = float(input("Inserisci numero: "))
-        print("La radice quadrata di "+str(rq)+" è: "+str(math.sqrt(rq)))
+        radicequadrata()
 
     elif x == "7":
-        print("Fattoriale")
-        ft = float(input("Inserisci numero: "))
-        print("Il fattoriale di "+str(ft)+" è: "+str(math.factorial(ft)))
+        fattoriale()
 
     elif x == "ESC" or x == "esc":
         print("La calcolatrice si chiuderà ora!")
         input()
+        sys.exit()
+    else:
+        print("Errore (digita una delle opzioni)")
         sys.exit()
 
     loop = input("Vuoi continuare ad usare la calcolatrice? S/N ")
@@ -67,10 +103,12 @@ def main():
         print("Sto tornando al menù principale!"
               " ")
         input()
-        main()
     elif loop == "N" or "n":
         print("La calcolatrice verrà chiusa ora!")
         input()
+        sys.exit()
+    else:
+        print("Errore (digita una delle opzioni)")
         sys.exit()
 
 
