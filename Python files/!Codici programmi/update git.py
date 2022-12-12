@@ -1,5 +1,7 @@
 # Questo software aggiorna la repository di GitHub automaticamente muovendo il mouse al posto tuo.
 # By iThinkAle
+# DISCLAIMER: CODESTO PROGRAMMA FUNZIONA SOLO IN PYCHARM CON FINESTRA A SCHERMO INTERO. IN ALTRI PROGRAMMI O NEL CASO
+# PYCHARM NON DOVESSE ESSERE SCHERMO INTERO IL PROGRAMMA NON FUNZIONERA'.
 
 import pyautogui as pag
 

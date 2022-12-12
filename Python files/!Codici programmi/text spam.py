@@ -8,7 +8,7 @@ def inizio():
     global text, number, time
     text = input(str("Digita il testo da spammare: "))
     number = input("Digita il numero di volte che vuoi che il testo venga scritto: ")
-    time = float(input("Digita ogni quanto tempo (in secodi) vuoi che il testo venga scritto: "))
+    time = float(input("Digita ogni quanto tempo (in secondi) vuoi che il testo venga scritto: "))
     program()
 
 
