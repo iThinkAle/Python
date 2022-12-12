@@ -15,9 +15,8 @@ def inizio():
 def program():
     count = 0
     while count <= int(number):
-        pag.typewrite(text + " " + str(count))
+        pag.typewrite(text)
         pag.press("enter")
-        count += 1
         pag.sleep(int(time))
 
 

