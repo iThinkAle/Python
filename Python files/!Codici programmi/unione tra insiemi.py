@@ -3,7 +3,7 @@ import sys
 
 def inizio():
     print("UNIONE DI LISTE")
-    print("Inserisci gli elementi delle due o più liste separandoli da uno spazio")
+    print("Inserisci gli elementi delle due liste separandoli da uno spazio")
     print("Premi INVIO per continuare...")
     input()
 
