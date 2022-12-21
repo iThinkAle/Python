@@ -1,6 +1,6 @@
 import sys
 
-
+# prova
 def inizio():
     print("UNIONE DI LISTE")
     print("Inserisci gli elementi delle due liste separandoli da uno spazio")
