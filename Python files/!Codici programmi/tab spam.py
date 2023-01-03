@@ -12,7 +12,6 @@ def main():
 
     if rinomina in ("yes", "no", "Yes", "No"):
         spam()
-
     else:
         spam()
 
