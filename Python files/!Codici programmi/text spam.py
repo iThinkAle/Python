@@ -2,6 +2,7 @@
 # By iThinkAle
 
 import pyautogui as pag
+import sys
 
 
 def inizio():
@@ -14,10 +15,13 @@ def inizio():
 
 def program():
     count = 0
-    while count <= int(number):
+    while count < int(number):
         pag.typewrite(text)
         pag.press("enter")
         pag.sleep(int(time))
+        count += 1
+    else:
+        sys.exit()
 
 
 inizio()
