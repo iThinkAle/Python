@@ -14,14 +14,17 @@ def inizio():
 
 
 def program():
-    count = 0
-    while count < int(number):
-        pag.typewrite(text)
-        pag.press("enter")
-        pag.sleep(int(time))
-        count += 1
-    else:
-        sys.exit()
+    try:
+        count = 0
+        while count < int(number):
+            pag.typewrite(text)
+            pag.press("enter")
+            pag.sleep(int(time))
+            count += 1
+        else:
+            sys.exit()
+    except KeyboardInterrupt:
+        print("A presto!")
 
 
 inizio()
