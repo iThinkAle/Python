@@ -11,7 +11,6 @@ def convert():
     try:
         newcurrency = c.convert(quantity, currency1, currency2)
         print(f"{quantity} in {currency2} (alle {dt_string}) è: {newcurrency}")
-
     except ValueError:
         print("Errore! Valuta non supportata!")
 
