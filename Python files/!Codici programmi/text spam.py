@@ -1,6 +1,7 @@
 # Questo programma scrive ripetutamente una frase prefissata per un numero di volte settato
 # By iThinkAle
 
+
 import pyautogui as pag
 import sys
 
