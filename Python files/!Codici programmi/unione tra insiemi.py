@@ -1,7 +1,7 @@
 import sys
 
 
-def inizio():
+def main():
     print("UNIONE DI LISTE")
     print("Inserisci gli elementi delle due liste separandoli da uno spazio")
     print("Premi INVIO per continuare...")
@@ -87,4 +87,5 @@ def cinqueliste():
     print(unique)
 
 
-inizio()
+if __name__ == "__main__":
+    main()

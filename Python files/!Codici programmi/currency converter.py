@@ -15,8 +15,14 @@ def convert():
         print("Errore! Valuta non supportata!")
 
 
-print("Benvenuto nel convertitore di valuta.")
-currency1 = input("Inserisci la valuta da convertire (codice (es: USD, EUR)): ")
-currency2 = input("Inserisci la valuta a cui vuoi che la tua cifra sia convertita (codice): ")
-quantity = float(input("Inserisci la cifra di denaro da convertire: "))
-convert()
+def main():
+    print("Benvenuto nel convertitore di valuta.")
+    currency1 = input("Inserisci la valuta da convertire (codice (es: USD, EUR)): ")
+    currency2 = input("Inserisci la valuta a cui vuoi che la tua cifra sia convertita (codice): ")
+    quantity = float(input("Inserisci la cifra di denaro da convertire: "))
+    global currency1, currency2, quantity
+    convert()
+
+
+if __name__ == "__main__":
+    main()

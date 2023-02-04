@@ -16,4 +16,5 @@ def main():
         spam()
 
 
-main()
+if __name__ == "__main__":
+    main()

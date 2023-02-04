@@ -6,7 +6,7 @@ import pyautogui as pag
 import sys
 
 
-def inizio():
+def main():
     global text, number, time
     text = input(str("Digita il testo da spammare: "))
     number = int(input("Digita il numero di volte che vuoi che il testo venga scritto: "))
@@ -28,4 +28,5 @@ def program():
         print("A presto!")
 
 
-inizio()
+if __name__ == "__main__":
+    main()

@@ -8,7 +8,7 @@ x = list(string.ascii_letters+string.digits+string.ascii_lowercase+string.ascii_
 print("Ciao e benvenuto sul generatore di password casuali! By Ale.")
 
 
-def generate_password():
+def main():
 
     y = int(input("Digita il numero dei caratteri che vuoi per la tua password: "))
 
@@ -31,7 +31,7 @@ def generate_password():
         input()
         print("Aspetta qualche secondo prima di generare una nuova password")
         time.sleep(3)
-        generate_password()
+        main()
 
     elif z == "N" or z == "s":
         print("Grazie per aver usato il generatore. Ciao!")
@@ -41,4 +41,6 @@ def generate_password():
         print("Errore (digita una delle opzioni)")
         sys.exit()
 
-generate_password()
+
+if __name__ == "__main__":
+    main()

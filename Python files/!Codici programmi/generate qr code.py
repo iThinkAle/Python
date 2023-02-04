@@ -30,10 +30,11 @@ def generateqrcode():
         sys.exit()
 
 
-def inizio():
+def main():
     print("Benvenuto nel generatore di QR Codes!")
     print(input("Premi INVIO per continuare..."))
     generateqrcode()
 
 
-inizio()
+if __name__ == "__main__":
+    main()

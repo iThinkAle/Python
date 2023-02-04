@@ -2,7 +2,7 @@ import random
 import sys
 
 
-def decim():
+def main():
 
     print("Benvenuto nel generatore casuale di numeri.")
     dec = str(input("Se vuoi generare un numero decimale da 16 cifre dopo la virgola da 0 a 1 digita decimale.\n"
@@ -42,4 +42,5 @@ def numero():
         sys.exit()
 
 
-decim()
+if __name__ == "__main__":
+    main()
