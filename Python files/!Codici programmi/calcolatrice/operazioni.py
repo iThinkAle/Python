@@ -1,3 +1,6 @@
+# Questo programma è usato per calcolatrice.py
+# By iThinkAle
+
 import math
 
 

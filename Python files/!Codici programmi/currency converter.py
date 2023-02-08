@@ -1,3 +1,6 @@
+# Questo programma permettere di convertere i soldi da una valuta all'altra.
+# By iThinkAle
+
 from currency_converter import CurrencyConverter
 import datetime
 c = CurrencyConverter()

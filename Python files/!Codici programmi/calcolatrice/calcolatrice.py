@@ -1,3 +1,7 @@
+# Questo programma è ua classica calcolatrice con addizione, sottrazione, moltiplicazione, divisione,
+# elevamento a potenza, radice quadrata e fattoriale.
+# By iThinkAle
+
 import sys
 import operazioni
 

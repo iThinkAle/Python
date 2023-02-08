@@ -1,3 +1,6 @@
+# Questo programma genera una password casuale rispettando diversi parametri che l'utente inserisce.
+# By iThinkAle
+
 import sys
 import random
 import string
@@ -24,6 +27,7 @@ def main():
     print("".join(password))
 
     print("Ricordati di salvare la password!")
+
     z = input("Vuoi generare un'altra password? S/N ")
 
     if z == "S" or z == "s":

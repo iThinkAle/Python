@@ -1,3 +1,6 @@
+# Questo programma muove il mouse inn una posizione random ogni 5 secondi.
+# By iThinkAle
+
 import pyautogui as pag
 import time
 import random

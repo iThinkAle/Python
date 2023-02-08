@@ -1,3 +1,6 @@
+# Questo programma è un tab spammer. Fun fact: è il mio primo programma.
+# By iThinkAle
+
 import subprocess
 
 

@@ -1,3 +1,6 @@
+# Questo programma permettere di generare uno o più numeri random.
+# By iThinkAle
+
 import random
 import sys
 

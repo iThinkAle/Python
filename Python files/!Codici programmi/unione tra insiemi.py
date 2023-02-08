@@ -1,3 +1,7 @@
+# Questo programma permette di unire da due a 5 insiemi. E' stato fatto sotto per esercitarmi a scuola.
+# Fun fact: uno dei miei primi programmi. Non ho rispettato in alcun modo la legge DRY.
+# By iThinkAle
+
 import sys
 
 

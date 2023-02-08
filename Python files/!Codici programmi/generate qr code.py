@@ -1,3 +1,7 @@
+# Questo programma permette di creare dei QR Codes da URL e frasi.
+# By iThinkAle
+
+
 import time
 import pyqrcode
 import sys

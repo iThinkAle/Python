@@ -1,3 +1,7 @@
+# Questo script apre automaticamente delle cartelle e Photoshop per facilitarmi a editare la mia foto giornaliera.
+# By iThinkAle
+
+
 import os
 
 def main():
