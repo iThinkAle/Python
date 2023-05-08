@@ -6,21 +6,22 @@ import random
 import string
 import time
 
-x = list(string.ascii_letters+string.digits+string.ascii_lowercase+string.ascii_uppercase+"[]+*ç@#°§()%&$£/=?'^|-_")
+letterList = list(string.ascii_letters+string.digits+string.ascii_lowercase +
+                  string.ascii_uppercase+"[]+*ç@#°§()%&$£/=?'^|-_")
 
 print("Ciao e benvenuto sul generatore di password casuali! By Ale.")
 
 
 def main():
 
-    y = int(input("Digita il numero dei caratteri che vuoi per la tua password: "))
+    passwordCharacters = int(input("Digita il numero dei caratteri che vuoi per la tua password: "))
 
-    random.shuffle(x)
+    random.shuffle(letterList)
 
     password = []
 
-    for i in range(y):
-        password.append(random.choice(x))
+    for i in range(passwordCharacters):
+        password.append(random.choice(letterList))
 
     random.shuffle(password)
 
@@ -28,16 +29,16 @@ def main():
 
     print("Ricordati di salvare la password!")
 
-    z = input("Vuoi generare un'altra password? S/N ")
+    anotherPass = input("Vuoi generare un'altra password? S/N ")
 
-    if z == "S" or z == "s":
+    if anotherPass == "S" or anotherPass == "s":
         print("Ok! Premi INVIO per continuare.")
         input()
         print("Aspetta qualche secondo prima di generare una nuova password")
         time.sleep(3)
         main()
 
-    elif z == "N" or z == "s":
+    elif anotherPass == "N" or anotherPass == "s":
         print("Grazie per aver usato il generatore. Ciao!")
         input()
         sys.exit()

@@ -11,21 +11,22 @@ def main():
     print("Premi INVIO per continuare...")
     input()
 
-    a = input("Per prima cosa, digita quante liste vuoi unire (Max. 5) (Digita ESC per uscire dal programma): ")
+    listNumber = input("Per prima cosa, digita quante liste vuoi unire (Max. 5) "
+                       "(Digita ESC per uscire dal programma): ")
 
-    if a == "2":
+    if listNumber == "2":
         dueliste()
 
-    elif a == "3":
+    elif listNumber == "3":
         treliste()
 
-    elif a == "4":
+    elif listNumber == "4":
         quattroliste()
 
-    elif a == "5":
+    elif listNumber == "5":
         cinqueliste()
 
-    elif a == "ESC":
+    elif listNumber == "ESC":
         print("Premi INVIO per uscire dal programma...")
         input()
         sys.exit()

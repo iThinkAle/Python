@@ -18,30 +18,30 @@ def main():
           "Fattoriale (solo numeri interi): digita 7; \n"
           "Per chiudere la calcolatrice: digita ESC \n")
 
-    x = input("Scegli l'operazione: ")
+    selectOperation = input("Scegli l'operazione: ")
 
-    if x == "1":
+    if selectOperation == "1":
         operazioni.addizione()
 
-    elif x == "2":
+    elif selectOperation == "2":
         operazioni.sottrazione()
 
-    elif x == "3":
+    elif selectOperation == "3":
         operazioni.moltiplicazione()
 
-    elif x == "4":
+    elif selectOperation == "4":
         operazioni.divisione()
 
-    elif x == "5":
+    elif selectOperation == "5":
         operazioni.potenza()
 
-    elif x == "6":
+    elif selectOperation == "6":
         operazioni.radicequadrata()
 
-    elif x == "7":
+    elif selectOperation == "7":
         operazioni.fattoriale()
 
-    elif x == "ESC" or x == "esc":
+    elif selectOperation == "ESC" or selectOperation == "esc":
         print("La calcolatrice si chiuderà ora!")
         input()
         sys.exit()
