@@ -1,0 +1,1 @@
+badLetters = ["g", "k", "m", "q", "v", "w", "z"]

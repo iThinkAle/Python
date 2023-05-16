@@ -5,7 +5,6 @@ import pyautogui as pag
 import sys
 
 
-
 def main():
     global text, number, time
     try:
