@@ -1,12 +1,16 @@
 import re
 
 
-dictionary = open("dictionary.txt")
+dictionary_path = "E:\!PERSONALE\Programming\Python\Python files\!Codici programmi\longest word on 7 segment display\dictionary.txt"
+
+with open(dictionary_path, "r", encoding="utf8") as file:
+    dictionary = file.read()
+    words = re.split(r"\s+", dictionary)
+
 longestWord = ""
-badLetters = [r"g", r"k", r"m", r"q", r"v", r"w", r"x", r"z"]
+badLetters = re.compile(r"[gkmqvwxy]", re.IGNORECASE)
 
-
-for testWord in dictionary:
+for testWord in words:
     if len(testWord) <= len(longestWord):
         continue
 
@@ -15,7 +19,5 @@ for testWord in dictionary:
         continue
 
     longestWord = testWord
-
-dictionary.close()
 
 print(longestWord)
