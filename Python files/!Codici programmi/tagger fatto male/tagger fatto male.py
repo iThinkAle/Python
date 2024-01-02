@@ -34,6 +34,7 @@ def readURL():
     global text
     text = data.getText()
 
+
 def handleText():
     lines = (line.strip() for line in text.splitlines())
     chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
