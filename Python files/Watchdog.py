@@ -5,13 +5,12 @@
 # If you know a bit of coding you will realize it's an extremely easy program. If you don't know coding learn it
 # and then come back.
 # --------------------------------------------------------------------------------------------------------------------
-# !!! THIS IS A MESSAGE FROM THE CREATOR OF THE REPOSITORY (me, iThinkAle): THIS PROGRAM IS NOT MADE BY ME.
-# THIS PROGRAM IS MADE BY DAVID ALESSANDRINI, THE GUY THAT PRANKED HIS BROTHER IN THE VIDEO LINKED ABOVE.
-# THE GUYS IN THE VIDEO LINKED ABOVE ARE NOT RELATED TO ME IN ANY WAY.
-# THIS PROGRAM IS LINKED IN THE VIDEO COMMENT SECTION.
-# THIS PROGRAM IS NOT MINE AND IS INTENDET FOR EDUCATIONAL AND ENTERTAINMENT PURPOSES ONLY.
-# DO NOT USE THIS PROGRAM WITH BAD INTENTIONS.
-
+# This is a message from the creator of this repository, so me, iThinkAle.
+# This script is not mine, is made by a youtuber called David Alessandrini. He created it to prank his brother in
+# this video: https://www.youtube.com/watch?v=BOkSupPtWCQ
+# The guys in the video are not related to me in any way. This script is publicly avaiable throught the link in the
+# video comment section.
+# I just played with it a bit, though this is a potentially dangerous script that shall not be used with bad intentions.
 
 
 

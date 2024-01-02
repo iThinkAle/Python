@@ -3,7 +3,7 @@
 import os
 
 try:
-    os.system('cmd /c "del /q /f /s %temp%\*"') # %temp%
+    os.system('cmd /c "del /q /f /s %temp%"') # %temp%
     os.system('cmd /c "del /s /q C:\Windows\temp\*"') # Temp
     os.system('cmd /c "del /s /q C:\Windows\Prefetch"') # Prefetch
 except:
