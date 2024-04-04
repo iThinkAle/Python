@@ -20,10 +20,11 @@ def convert():
 
 def main():
     print("Benvenuto nel convertitore di valuta.")
+    global currency1, currency2, quantity
     currency1 = input("Inserisci la valuta da convertire (codice (es: USD, EUR)): ")
     currency2 = input("Inserisci la valuta a cui vuoi che la tua cifra sia convertita (codice): ")
     quantity = float(input("Inserisci la cifra di denaro da convertire: "))
-    global currency1, currency2, quantity
+
     convert()
 
 

@@ -29,7 +29,7 @@ def numero():
     z = input("Vuoi generare un numero o una lista di numeri interi random da 0 a " + str(a) + "? (Digita 'uno' per\n"
               "uno solo e 'lista' per la lista o 'no' per generare nulla): ")
 
-    if z == "uno":
+    if z == "uno" or z == "1":
         y = random.randint(0, int(a))
         print(y)
     elif z == "lista":
