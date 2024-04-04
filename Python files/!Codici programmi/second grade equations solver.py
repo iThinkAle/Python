@@ -1,4 +1,4 @@
-# Simple script to solve second grade equations
+# Simple script to solve second grade equations.
 # By iThinkAle
 
 import math
