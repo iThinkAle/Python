@@ -64,9 +64,7 @@ else:
 
 
 window = Tk()
-
 button = Button(text="Open", command=openFile)
 button.pack()
 internetconnection()
-
 window.mainloop()
