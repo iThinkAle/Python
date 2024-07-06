@@ -4,47 +4,56 @@
 import sys
 import random
 import string
-import time
 
 letterList = list(string.ascii_letters+string.digits+string.ascii_lowercase +
-                  string.ascii_uppercase+"[]+*ç@#°§()%&$£/=?'^|-_")
+                  string.ascii_uppercase+"[]+*ç@#()%&$£/=?'^-_")
 
-print("Ciao e benvenuto sul generatore di password casuali! By Ale.")
+print("Hello and welcome to the random password generator! By iThinkAle.")
 
 
 def main():
+    global passwordCharacters
+    try:
+        passwordCharacters = int(input("Please digit the number of characters you want your password to be: "))
+    except ValueError:
+        print("Please digit an integer number")
+        main()
+    else:
+        passwordGen()
 
-    passwordCharacters = int(input("Digita il numero dei caratteri che vuoi per la tua password: "))
+
+def passwordGen():
 
     random.shuffle(letterList)
 
     password = []
 
-    for i in range(passwordCharacters):
+    for i in range(int(passwordCharacters)):
         password.append(random.choice(letterList))
 
     random.shuffle(password)
 
     print("".join(password))
 
-    print("Ricordati di salvare la password!")
+    print("Remember to save your password!")
 
-    anotherPass = input("Vuoi generare un'altra password? S/N ")
+    anotherPass()
 
-    if anotherPass == "S" or anotherPass == "s":
-        print("Ok! Premi INVIO per continuare.")
+
+def anotherPass():
+    anotherOne = input("Do you want to generate another password? Y/N ")
+
+    if anotherOne == "Y" or anotherOne == "y":
+        print("Ok! Press Enter to continue.")
         input()
-        print("Aspetta qualche secondo prima di generare una nuova password")
-        time.sleep(3)
         main()
 
-    elif anotherPass == "N" or anotherPass == "s":
-        print("Grazie per aver usato il generatore. Ciao!")
-        input()
+    elif anotherOne == "N" or anotherOne == "n":
+        print("Thank you for using this generator. Bye!")
         sys.exit()
     else:
-        print("Errore (digita una delle opzioni)")
-        sys.exit()
+        print("Please digit one of the options")
+        anotherPass()
 
 
 if __name__ == "__main__":

@@ -54,6 +54,7 @@ def internetconnection():
         requests.get("https://google.com/", timeout=5)
         return True
     except requests.ConnectionError:
+        print("No internet connection")
         return False
 
 
