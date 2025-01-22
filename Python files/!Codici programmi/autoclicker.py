@@ -12,3 +12,5 @@ try:
     while True:
         pag.click(button=scelta_tasto)
         time.sleep(tempo)
+except KeyboardInterrupt:
+    print("bye")

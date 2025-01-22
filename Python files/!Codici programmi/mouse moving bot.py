@@ -10,7 +10,7 @@ while True:
     y = (random.randint(200, 600))
 
     pag.moveTo(x, y, 0.5)
-    time.sleep(5)
+    time.sleep(0.2)
 
 
 if __name__ == "__main__":
