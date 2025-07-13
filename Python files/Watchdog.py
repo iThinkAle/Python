@@ -5,10 +5,10 @@
 # If you know a bit of coding you will realize it's an extremely easy program. If you don't know coding learn it
 # and then come back.
 # --------------------------------------------------------------------------------------------------------------------
-# This is a message from the creator of this repository, so me, iThinkAle.
-# This script is not mine, is made by a youtuber called David Alessandrini. He created it to prank his brother in
+# This is a message from the creator of this repository, me, iThinkAle.
+# This script is not mine, it is made by a youtuber called David Alessandrini. He created it to prank his brother in
 # this video: https://www.youtube.com/watch?v=BOkSupPtWCQ
-# The guys in the video are not related to me in any way. This script is publicly avaiable throught the link in the
+# The guys in the video are not related to me in any way. This script is publicly available through the link in the
 # video comment section.
 # I just played with it a bit, though this is a potentially dangerous script that shall not be used with bad intentions.
 
